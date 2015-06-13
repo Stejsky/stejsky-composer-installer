@@ -5,14 +5,28 @@
  *  @version 1.0
  */
 
-namespace Composer\Installers;
+namespace NetteInstaller;
 
+use Composer\Installer\LibraryInstaller;
+use Composer\Package\PackageInterface;
 
-class NetteInstaller extends \Composer\Installers\BaseInstaller
+class NetteInstaller extends LibraryInstaller
 {
 
-	protected $locations = array(
-		'module'    => 'app/{$name}/',
-	);
+	/**
+	 * {@inheritDoc}
+	 */
+	public function getPackageBasePath(PackageInterface $package)
+	{
+		return 'app/'.substr($package->getPrettyName(), 23);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	public function supports($packageType)
+	{
+		return 'nette-module' === $packageType;
+	}
 
 } 
