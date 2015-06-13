@@ -1,0 +1,8 @@
+{
+    "name": "stejsky/composer-installer",
+    "description": "Basic Composer Installer for Nette",
+    "require": {
+        "php": ">=5.4.0",
+        "composer/installers": "~1.0"
+    }
+}
