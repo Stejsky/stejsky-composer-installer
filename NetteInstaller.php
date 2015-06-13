@@ -13,6 +13,7 @@ use Composer\Package\PackageInterface;
 class NetteInstaller extends LibraryInstaller
 {
 
+
 	/**
 	 * {@inheritDoc}
 	 */
