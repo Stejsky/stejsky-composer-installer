@@ -1,12 +1,11 @@
 {
     "name": "stejsky/composer-installer",
     "description": "Basic Composer Installer for Nette",
-    "type": "composer-plugin",
+    "type": "composer-installer",
     "extra": {
         "class": "Stejsky\\Composer\\NetteInstaller"
     },
     "autoload": {
         "psr-0": {"Stejsky\\Composer": ""}
-    },
-    "target-dir": "Stejsky/Composer"
+    }
 }
