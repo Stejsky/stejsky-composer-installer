@@ -17,10 +17,18 @@ class NetteInstaller extends LibraryInstaller
 	/**
 	 * {@inheritDoc}
 	 */
-	public function getPackageBasePath(PackageInterface $package)
+	public function getInstallPath(PackageInterface $package)
 	{
-		return 'app/'.substr($package->getPrettyName(), 23);
+		$moduleName  = $package->getPrettyName();
+		$moduleName  = preg_replace("#^stejsky/#", "", $moduleName);
+		$splitedName = preg_split("/-/", $moduleName);
+		$moduleName  = "";
+		foreach ($splitedName as $namePart) {
+			$moduleName .= ucfirst(strtolower($namePart));
+		}
+		return 'application/app/modules/' . $moduleName;
 	}
+
 
 	/**
 	 * {@inheritDoc}

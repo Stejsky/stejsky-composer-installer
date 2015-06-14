@@ -8,6 +8,13 @@
         "composer-plugin-api": "1.0.0"
     },
     "extra": {
-        "class": "\\NetteInstaller\\NetteInstallerPlugin"
-    }
+        "class": "Stejsky\\Composer\\NetteInstaller"
+    },
+    "autoload": {
+        "psr-0": {"Tlapnet\\Composer": ""}
+    },
+    "extra": {
+        "class": "Tlapnet\\Composer\\TlapnetModuleComposerInstaller"
+    },
+    "target-dir": "composer-installer"
 }
