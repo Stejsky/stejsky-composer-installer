@@ -26,7 +26,7 @@ class NetteInstaller extends LibraryInstaller
 		foreach ($splitedName as $namePart) {
 			$moduleName .= ucfirst(strtolower($namePart));
 		}
-		return 'application/app/modules/' . $moduleName;
+		return 'app/' . $moduleName;
 	}
 
 
