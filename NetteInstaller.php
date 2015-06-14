@@ -5,7 +5,7 @@
  *  @version 1.0
  */
 
-namespace NetteInstaller;
+namespace Stejsky\Composer;
 
 use Composer\Installer\LibraryInstaller;
 use Composer\Package\PackageInterface;
