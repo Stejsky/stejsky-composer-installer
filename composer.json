@@ -1,7 +1,7 @@
 {
     "name": "stejsky/composer-installer",
     "description": "Basic Composer Installer for Nette",
-    "type": "composer-installer",
+    "type": "composer-plugin",
     "extra": {
         "class": "Stejsky\\Composer\\NetteInstaller"
     },
