@@ -11,10 +11,6 @@
         "class": "Stejsky\\Composer\\NetteInstaller"
     },
     "autoload": {
-        "psr-0": {"Tlapnet\\Composer": ""}
-    },
-    "extra": {
-        "class": "Tlapnet\\Composer\\TlapnetModuleComposerInstaller"
-    },
-    "target-dir": "composer-installer"
+        "psr-0": {"Stejsky\\Composer": ""}
+    }
 }
